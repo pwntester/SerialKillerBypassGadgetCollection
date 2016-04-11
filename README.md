@@ -2,36 +2,26 @@
 
 ## Description
 
-Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains 
-to bypass ["Look-Ahead ObjectInputStreams"]() bypass gadgets are allowed by the 
-desfensive deserialization.
+Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass ["Look-Ahead ObjectInputStreams"](http://www.ibm.com/developerworks/library/se-lookahead/) desfensive deserialization.
 
-Released as part of RSA 2016 Talk ["SerialKiller: Silently Pwning Your Java Endpoints"](https://www.rsaconference.com/events/us16/agenda/sessions/2389/serial-killer-silently-pwning-your-java-endpoints) 
-by @pwntester and @cschneider4711.
+Released as part of RSA 2016 Talk ["SerialKiller: Silently Pwning Your Java Endpoints"](https://www.rsaconference.com/events/us16/agenda/sessions/2389/serial-killer-silently-pwning-your-java-endpoints) by Alvaro Muñoz (@pwntester) and Christian Schneider (@cschneider4711).
 
-["Slides"](https://www.rsaconference.com/writable/presentations/file_upload/asd-f03-serial-killer-silently-pwning-your-java-endpoints.pdf)
-["Paper"](http://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
+Details about bypass gadget technique can be found in the following resources:
+- ["Paper"](http://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
+- ["Slides"](https://www.rsaconference.com/writable/presentations/file_upload/asd-f03-serial-killer-silently-pwning-your-java-endpoints.pdf)
+- ["OWASP BeNeLux Day Slides"](https://www.owasp.org/images/8/8b/OWASPBNL_Java_Deserialization.pdf)
 
 ## Disclaimer
 
-This software has been created purely for the purposes of academic research and
-for the development of effective defensive techniques, and is not intended to be
-used to attack systems except where explicitly authorized. Project maintainers 
-are not responsible or liable for misuse of the software. Use responsibly.
+This software has been created purely for the purposes of academic research and for the development of effective defensive techniques, and is not intended to be used to attack systems except where explicitly authorized. Project maintainers are not responsible or liable for misuse of the software. Use responsibly.
 
 ## Requirements
 
-The current status of this project heavily depends on ["YSoSerial"](https://github.com/frohoff/ysoserial).
-project and the idea is to integrate it there in the near future (see below).
-It can actually be considered an extension of ysoserial and it reuses some parts of the code 
-and all the payload gadgets in order to facilitate future integration.
+The current status of this project heavily depends on ["YSoSerial"](https://github.com/frohoff/ysoserial).  project and the idea is to integrate it there in the near future (see below).  It can actually be considered an extension of ysoserial and it reuses some parts of the code and all the payload gadgets in order to facilitate future integration.
 
-Copy the current version (`ysoserial-0.0.5-SNAPSHOT-all.jar`) to `/external` 
-and adjust the `pom.xml` if using a different version.
+Copy the current version (`ysoserial-0.0.5-SNAPSHOT-all.jar`) to `/external` and adjust the `pom.xml` if using a different version.
 
-The following Jar files are required from Weblogic and WebSphere application servers 
-and not distributed with SerialKiller Bypass Gadget Collection.
-Copy them from your authorized version of the application server to the `/external` directory.
+The following Jar files are required from Weblogic and WebSphere application servers and not distributed with SerialKiller Bypass Gadget Collection.  Copy them from your authorized version of the application server to the `/external` directory.
 
 ```
 com.ibm.jaxws.thinclient_8.5.0.jar
