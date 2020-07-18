@@ -7,8 +7,8 @@ Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chai
 Released as part of RSA 2016 Talk ["SerialKiller: Silently Pwning Your Java Endpoints"](https://www.rsaconference.com/events/us16/agenda/sessions/2389/serial-killer-silently-pwning-your-java-endpoints) by Alvaro Muñoz (@pwntester) and Christian Schneider (@cschneider4711).
 
 Details about bypass gadget technique can be found in the following resources:
-- ["Paper"](http://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
-- ["Slides"](https://www.rsaconference.com/writable/presentations/file_upload/asd-f03-serial-killer-silently-pwning-your-java-endpoints.pdf)
+- ["Paper"](https://community.microfocus.com/t5/Fortify-User-Discussions/The-perils-of-Java-deserialization/td-p/1596306?attachment-id=63108)
+- ["Slides"](https://speakerdeck.com/pwntester/serial-killer-silently-pwning-your-java-endpoints)
 - ["OWASP BeNeLux Day Slides"](https://www.owasp.org/images/8/8b/OWASPBNL_Java_Deserialization.pdf)
 
 ## Disclaimer
